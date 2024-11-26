@@ -1,7 +1,17 @@
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url("image/imagem.jpg");
+body{ 
+  text-align: center;
+  font-family: gotham, arial, helvetica, sans-serif;
+  background-image: url("imagem.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+input {
+    border-radius: 200px;
+}
+button {
+    border-radius: 200px;
+    background-color: #81b1fa;
+    padding: 15px;
 }
