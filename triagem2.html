@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triagem</title>
-    <link rel="stylesheet" type="text/css"   href="infpaciente.css">
+    <link rel="stylesheet" type="text/css" href="infpacientes.css">
 </head>
-<body> <h2>Informações do Paciente</h2>
-<div id="dadospaciente"></div>
- <script>
-const nome = sessionStorage.getItem('nome')
-const cpf = sessionStorage.getItem('cpf')
-const sintomas = sessionStorage.getItem('sintomas');
-if (nome && cpf && sintomas) {
-document.getElementById ('dadospaciente').innerHTML = `
-<p><strong>Nome:</strong> ${nome}</p>
-<p><strong>CPF:</strong> ${cpf}</p>
-<p><strong>Sintomas:</strong> ${sintomas}</p>`;
-}
-else{
-document.getElementById('dadospaciente').innerHTML = '<p>Dados não encontrados.</p>';
-}
 
- </script>   
+<body>
+   
+    <div id="dadospaciente">
+        <h2>Informações do Paciente</h2>
+    </div>
+
 </body>
+<script>
+    const nome = sessionStorage.getItem('nome')
+    const cpf = sessionStorage.getItem('cpf')
+    const sintomas = sessionStorage.getItem('sintomas');
+    if (nome && cpf && sintomas) {
+        document.getElementById('dadospaciente').innerHTML = `
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>CPF:</strong> ${cpf}</p>
+        <p><strong>Sintomas:</strong> ${sintomas}</p>`;
+    }
+    else {
+        document.getElementById('dadospaciente').innerHTML = '<p>Dados não encontrados.</p>';
+    }
+
+</script>
 </html>
