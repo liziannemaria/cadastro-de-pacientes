@@ -1,0 +1,7 @@
+Relatório 
+
+O software permite  que o usuário insira os dados pessoais do paciente, fazendo exigências para ser possível o ato da triagem como conter mais de 2 letras para o nome, 11 números para cpf e que para os sintomas haja no mínimo 3 letras e no máximo 100 para que contenha informações suficientes para serem passadas ao próximo profissional de saúde que irá avalia-lo. 
+
+ O sistema sinaliza se as opções foram correspondidas corretamente e em caso de falha de alguma dessas opções no formulário, o sistema emite um alerta e específica. Quando não há problemas, somos direcionados a uma nova página com estes dados. 
+
+ 
